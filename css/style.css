@@ -1,3 +1,22 @@
+:root {
+    --font: 'Roboto Mono', monospace;
+    --background: rgb(95, 123, 247);
+    --color: #232333;
+    --normal-shadow: 0px 100px 80px rgba(0, 0, 0, 0.13),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0934511),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0774939),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.065),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0525061),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0365489);
+  --text-shadow: 0px 100px 145px rgba(0, 0, 0, 0.25),
+    0px 41.7776px 60.5775px rgba(0, 0, 0, 0.179714),
+    0px 22.3363px 32.3876px rgba(0, 0, 0, 0.149027),
+    0px 12.5216px 18.1562px rgba(0, 0, 0, 0.125),
+    0px 6.6501px 9.64265px rgba(0, 0, 0, 0.100973),
+    0px 2.76726px 4.01252px rgba(0, 0, 0, 0.0702864);
+  }
+  
+
 html, body, div, h1, h2, h3, p, a, code, img, ul, li {
     margin: 0;
     padding: 0;
@@ -28,6 +47,10 @@ a:hover{
     color:rgb(145, 255, 180);
     text-decoration:underline;
 }
+a:active{
+    color:rgb(59, 224, 111);
+    text-decoration: underline;
+}
 li {
     color: #46af4b;
 }
@@ -39,6 +62,7 @@ li {
     background-size: cover;
     font-weight: 400;
     line-height: 1.6;
+    backdrop-filter: blur(20px);
 }
 .wrapper {
     max-width: 520px;
@@ -46,11 +70,15 @@ li {
     margin-right: auto;
     padding: 40px;
     background-color: rgb(21, 23, 26);
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+    box-shadow: var(--text-shadow);
 }
 .logo {
     display: block;
     margin: 0 auto;
     padding-bottom: 18px;
+    text-shadow: var(--normal-shadow);
 }
 .header {
     font-size: 2rem;
