@@ -30,7 +30,7 @@ html, body, div, h1, h2, h3, p, a, code, img, ul, li {
 }
 body {
     line-height: 1;
-    background-image: url('./img/background.jpg');
+    background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/main/img/background.jpg');
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
