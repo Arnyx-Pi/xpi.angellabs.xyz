@@ -35,11 +35,11 @@ html {
 body {
     line-height: 1;
     background-color: #212329;
-    background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/4e24efaa30a8e59ad9aa190f33f35966135e6368/img/nnnoise.svg');
+    background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/95ad32fc733d118fc83fe9261d0008727989a3e7/img/ooorganize.svg');
     /*background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/main/img/background.jpg');*/
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 ul {
