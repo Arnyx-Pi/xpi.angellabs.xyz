@@ -30,9 +30,9 @@ html, body, div, h1, h2, h3, p, a, code, img, ul, li {
 }
 body {
     line-height: 1;
-    background-image: url('/img/background.jpg');
+    background-image: url('./img/background.jpg');
     background-position: center;
-    background-size: fit;
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
