@@ -34,10 +34,11 @@ html {
 }
 body {
     line-height: 1;
+    background-color: #181a1f;
     background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/main/img/background.jpg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 ul {
