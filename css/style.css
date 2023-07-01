@@ -1,8 +1,10 @@
 @import url('https://fonts.gstatic.com/s/raleway/v22/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVtapYCP.ttf');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --font: 'Roboto Mono', monospace;
+    font-family: 'Raleway', sans-serif;
+    --font: 'Raleway', sans-serif;
     --background: rgb(95, 123, 247);
     --color: #232333;
     --normal-shadow: 0px 100px 80px rgba(0, 0, 0, 0.13),
@@ -19,7 +21,6 @@
     0px 2.76726px 4.01252px rgba(0, 0, 0, 0.0702864);
   }
   
-
 html, body, div, h1, h2, h3, p, a, code, img, ul, li {
     margin: 0;
     padding: 0;
@@ -27,15 +28,18 @@ html, body, div, h1, h2, h3, p, a, code, img, ul, li {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Raleway', sans-serif;
 }
 html {
     backdrop-filter: blur(10px);
     z-index: 10;
 }
 body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
     line-height: 1;
-    background-color: #212329;
-    background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/95ad32fc733d118fc83fe9261d0008727989a3e7/img/ooorganize.svg');
+    background-color: #192027;
+    background-image: url('../img/ooorganize3.svg');
     /*background-image: url('https://raw.githubusercontent.com/Arnyx-Pi/xpi.angellabs.xyz/main/img/background.jpg');*/
     background-position: center;
     /*background-size: cover;*/
@@ -51,7 +55,7 @@ h1, h2, h3, p {
 }
 
 a:link {
-    color: rgb(99, 94, 252);
+    color: rgb(100, 130, 255);
     text-decoration: none;
 }
 a:visited{
@@ -68,49 +72,107 @@ a:active{
 }
 li {
     color: #46af4b;
+    font-weight: 400;
+}
+.title {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+.description {
+    font-size: 20px;
+    text-align: center;
 }
 .logo {
     display: block;
     margin: 0 auto;
     padding-bottom: 18px;
 }
+.page-w {
+    position: relative;
+    min-height: 100vh;
+}
 .page {
-    font-family: "Roboto", sans-serif;
     /*background-color: #2b2c2e;*/
     font-weight: 400;
     line-height: 1.6;
+    padding-bottom: 100px;
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     align-content: center;
-    max-width: 520px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     padding: 40px;
-    background-color: rgb(21, 23, 26);
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
-    box-shadow: var(--text-shadow);
-}
-.header {
-    font-size: 2rem;
-    text-align: center;
-    padding-bottom: 32px;
+    background-color: rgb(21, 23, 26, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 3%;
+    border: 6px solid whitesmoke;
+    box-shadow: var(--normal-shadow);
 }
 .h1-footer {
     text-align: center;
 }
-.footer {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position:fixed;
-    bottom:0;
-    left:0;
-    width: 100%;
-    height: 60px;
-    background-color: #111212;
+.footer-title {
+    padding: 15px;
+    margin-top: 50px;
 }
+.footer {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111212;
+    background-image: url("../img/ft-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.f-page {
+    display: flex;
+    align-content: space-around;
+    row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.linklist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 3em;
+}
+.f-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.5em;
+    align-content: space-between;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.3em;
+}
+
+
+
+
+
+
 .bold {
     font-weight: 700;
 }
@@ -118,6 +180,67 @@ li {
     list-style-type: disc;
     padding-bottom: 16px;
     padding-left: 10px;
+}
+.twitter-handle:link{
+  color: rgb(255, 177, 177);
+  text-decoration: none;
+}
+.twitter-handle:visited{
+  color: rgb(255, 177, 177);
+  text-decoration: none;
+}
+.twitter-handle:hover{
+  color: rgb(255, 35, 82);
+  text-decoration: none;
+}
+.twitter-handle:active{
+  color: rgb(198, 27, 64);
+  text-decoration: none;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background: linear-gradient(90deg, rgba(20, 120, 120, .6), rgba(20, 100, 150, .6));
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 17px;
+  max-width: 1400px;
+  min-width: 300px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all .4s ease-in-out;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+.cls-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cls-bottom {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: rgba(20, 100, 150, 1);
+  transition: all .12s ease-in-out;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: rgba(10, 30, 40, 1);
+}
+.contents {
+    padding-top: 10px;
 }
 
 /* width */
@@ -127,15 +250,15 @@ li {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #192027;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(68, 69, 70);
+  background: #dedede;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(41, 42, 43);
+  background: #ffffff;
 }
